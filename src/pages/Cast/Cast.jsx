@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { getCastById } from '../../components/API';
-import { Section, MainTitle } from '../../components/Trends.styled';
+import { MainTitle } from '../../components/Trends.styled';
 import { Gallery, Image, Item, Title, Text } from '../Movies/Movies.styled';
 
 const { useParams } = require('react-router-dom');

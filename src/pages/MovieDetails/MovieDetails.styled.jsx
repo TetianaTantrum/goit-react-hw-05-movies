@@ -49,9 +49,8 @@ export const Button = styled.button`
   background-color: #051805;
   text-decoration: none;
   padding: 7px 20px;
-  margin-right: 15px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 15px;
+
   text-align: center;
   border-radius: 5px;
   border: 0px;
