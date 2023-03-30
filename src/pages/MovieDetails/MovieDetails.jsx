@@ -10,7 +10,7 @@ const MovieDetails = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const location = useLocation();
-  const backLinkLocationRef = useRef(location.state?.from && '/');
+  const backLinkLocationRef = useRef(location.state?.from ?? '/dogs');
 
   useEffect(() => {
     async function getMovieDetails() {
@@ -95,7 +95,3 @@ const MovieDetails = () => {
   );
 };
 export default MovieDetails;
-// Image;
-// Title;
-// Text;
-// Button;
