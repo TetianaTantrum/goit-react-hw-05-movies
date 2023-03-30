@@ -2,13 +2,11 @@ import { NavLink, Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
 import styled from 'styled-components';
 import { Header, List, Item } from './Layout.styled';
+import { Button } from '../pages/Movies/Movies.styled';
 
 const StyledLink = styled(NavLink)`
   text-decoration: none;
   display: inline-block;
-  padding: 7px 25px;
-  border-radius: 5px;
-  border: 0px;
   color: rgb(229, 229, 229);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
@@ -30,10 +28,14 @@ export const Layout = () => {
       <Header>
         <List>
           <Item>
-            <StyledLink to="/">Home</StyledLink>
+            <Button>
+              <StyledLink to="/">Home</StyledLink>
+            </Button>
           </Item>
           <Item>
-            <StyledLink to="/movies">Search</StyledLink>
+            <Button>
+              <StyledLink to="/movies">Search</StyledLink>
+            </Button>
           </Item>
         </List>
       </Header>
