@@ -50,6 +50,7 @@ export const Form = styled.form`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
   margin-bottom: 20px;
 `;
 export const Input = styled.input`
